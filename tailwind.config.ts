@@ -8,10 +8,17 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['PT Sans', 'sans-serif'],
+        headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
@@ -88,10 +95,27 @@ export default {
             height: '0',
           },
         },
+        'gradient-loop': {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+        },
+        'marquee': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'float': {
+            '0%': { transform: 'translateY(0px) rotate(0deg)' },
+            '50%': { transform: 'translateY(-20px) rotate(10deg)' },
+            '100%': { transform: 'translateY(0px) rotate(0deg)' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'gradient-loop': 'gradient-loop 5s linear infinite',
+        'marquee': 'marquee 25s linear infinite',
+        'float': 'float 6s ease-in-out infinite',
       },
     },
   },
