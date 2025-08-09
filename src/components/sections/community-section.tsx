@@ -41,7 +41,7 @@ const CommunitySection = () => {
                             <Button className="clay-button bg-[#2AABEE] hover:bg-[#2297d2] text-white rounded-full px-6 py-3 text-base font-bold"><Send className="mr-2"/> Telegram</Button>
                          </div>
                          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 pt-4">
-                            <Input type="email" name="email" placeholder="your.email@dough.com" className="clay-card !bg-background rounded-full h-12 flex-grow" required aria-label="Email for subscription" />
+                            <Input type="email" name="email" placeholder="your.email@dough.com" className="clay-card !bg-card rounded-full h-12 flex-grow" required aria-label="Email for subscription" />
                             <Button type="submit" className="clay-button bg-primary text-primary-foreground rounded-full h-12 px-6 font-bold">Subscribe</Button>
                          </form>
                     </div>

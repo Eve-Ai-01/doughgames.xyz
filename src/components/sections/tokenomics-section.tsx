@@ -38,7 +38,7 @@ const TokenomicsChart = () => (
                 background: "hsl(var(--background) / 0.8)",
                 borderColor: "hsl(var(--border))",
                 borderRadius: "var(--radius)",
-                boxShadow: "5px 5px 10px rgba(135, 64, 3, 0.3)",
+                boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
                 fontFamily: "var(--font-body)",
               }}
             />

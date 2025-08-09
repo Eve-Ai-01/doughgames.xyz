@@ -45,7 +45,7 @@ const CountdownCard = () => {
     ));
 
     return (
-        <div className="clay-card bg-background/70 backdrop-blur-sm rounded-2xl p-6 w-full max-w-md mx-auto md:mx-0">
+        <div className="clay-card bg-card/70 backdrop-blur-sm rounded-2xl p-6 w-full max-w-md mx-auto md:mx-0">
             <div className="flex justify-around items-center">
                 {timeLeft.days > 0 || timeLeft.hours > 0 || timeLeft.minutes > 0 || timeLeft.seconds > 0 ? timerComponents : <span className="text-2xl font-bold">Time's up!</span>}
             </div>

@@ -49,7 +49,7 @@ const AboutSection = () => {
                     <div>
                         <Accordion type="single" collapsible className="w-full space-y-4">
                             {faqs.map((faq, index) => (
-                                <AccordionItem value={`item-${index}`} key={index} className="clay-card rounded-2xl bg-background/70 backdrop-blur-sm border-none overflow-hidden">
+                                <AccordionItem value={`item-${index}`} key={index} className="clay-card rounded-2xl bg-card/70 backdrop-blur-sm border-none overflow-hidden">
                                     <AccordionTrigger className="font-headline text-lg hover:no-underline text-left px-6 py-4">
                                         {faq.question}
                                     </AccordionTrigger>

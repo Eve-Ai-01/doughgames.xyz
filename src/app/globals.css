@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 222 84% 4%; /* #01081a */
-    --foreground: 210 40% 98%; /* #f9fafb */
-    --card: 222 84% 6%; /* A slightly lighter shade of the background */
-    --card-foreground: 210 40% 98%;
-    --popover: 222 84% 4%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 343 94% 69%; /* #FC64A2 */
-    --primary-foreground: 210 40% 98%;
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 25%;
-    --muted-foreground: 215 28% 65%;
-    --accent: 262 81% 64%; /* #9367F8 */
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 25%;
-    --input: 217 33% 17%;
-    --ring: 343 94% 69%;
+    --background: 240 10% 98%; /* #f9f9fb */
+    --foreground: 240 10% 3.9%; /* #09090b */
+    --card: 240 10% 100%; /* #ffffff */
+    --card-foreground: 240 10% 3.9%;
+    --popover: 240 10% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 262.1 83.3% 57.8%; /* #6d28d9 */
+    --primary-foreground: 210 20% 98%;
+    --secondary: 240 4.8% 95.9%; /* #f4f4f5 */
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 346.8 77.2% 49.8%; /* #ef4444 */
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262.1 83.3% 57.8%;
     --radius: 0.8rem;
   }
 
   .dark {
-    --background: 222 84% 4%;
-    --foreground: 210 40% 98%;
-    --card: 222 84% 6%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 84% 4%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 343 94% 69%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 25%;
-    --muted-foreground: 215 28% 65%;
-    --accent: 262 81% 64%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 25%;
-    --input: 217 33% 17%;
-    --ring: 343 94% 69%;
+    --background: 240 10% 98%; /* #f9f9fb */
+    --foreground: 240 10% 3.9%; /* #09090b */
+    --card: 240 10% 100%; /* #ffffff */
+    --card-foreground: 240 10% 3.9%;
+    --popover: 240 10% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 262.1 83.3% 57.8%; /* #6d28d9 */
+    --primary-foreground: 210 20% 98%;
+    --secondary: 240 4.8% 95.9%; /* #f4f4f5 */
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 346.8 77.2% 49.8%; /* #ef4444 */
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262.1 83.3% 57.8%;
   }
 }
 
@@ -74,18 +74,18 @@
 
 @layer utilities {
   .clay-card, .clay-button {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), inset -7px -5px 12px rgba(0, 0, 0, 0.2), inset 9px 9px 12px rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), inset -7px -5px 12px rgba(255, 255, 255, 0.5), inset 9px 9px 12px rgba(0, 0, 0, 0.02);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
   .clay-card:hover, .clay-button:hover {
     transform: translateY(-3px);
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35), inset -5px -4px 12px rgba(0, 0, 0, 0.15), inset 7px 7px 10px rgba(255, 255, 255, 0.04);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.12), inset -5px -4px 12px rgba(255, 255, 255, 0.45), inset 7px 7px 10px rgba(0, 0, 0, 0.01);
   }
 
   .clay-button:active {
       transform: translateY(1px);
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), inset -7px -5px 12px rgba(0, 0, 0, 0.25), inset 9px 9px 12px rgba(255, 255, 255, 0.06);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), inset -7px -5px 12px rgba(255, 255, 255, 0.55), inset 9px 9px 12px rgba(0, 0, 0, 0.03);
   }
   
   .text-gradient-doh {

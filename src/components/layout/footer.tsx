@@ -16,12 +16,12 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-secondary border-t-4 border-orange-300/50">
+        <footer className="bg-secondary/50 border-t-4 border-primary/20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex items-center gap-2 text-2xl font-bold font-headline text-primary-foreground drop-shadow-md">
                         <Gamepad2 className="w-8 h-8 text-primary" />
-                         <span className="bg-gradient-to-r from-primary via-orange-400 to-yellow-300 bg-clip-text text-transparent">Dough Games</span>
+                         <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">Dough Games</span>
                     </div>
                     <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
                          {navLinks.map((link) => (

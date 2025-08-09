@@ -37,7 +37,7 @@ const roadmapPhases = [
 ];
 
 const RoadmapCard = ({ phase, title, status, description, icon, items }: (typeof roadmapPhases)[0]) => (
-    <div className="clay-card rounded-2xl bg-background/70 backdrop-blur-sm p-6 flex flex-col items-center text-center h-full">
+    <div className="clay-card rounded-2xl bg-card/70 backdrop-blur-sm p-6 flex flex-col items-center text-center h-full">
         <div className="mb-4">{icon}</div>
         <CardTitle className="font-headline text-2xl mb-2">{`Phase ${phase}: ${title}`}</CardTitle>
         <p className="text-sm font-bold text-primary mb-4">{status}</p>
