@@ -38,7 +38,7 @@ const TokenomicsChart = () => (
                 background: "hsl(var(--background) / 0.8)",
                 borderColor: "hsl(var(--border))",
                 borderRadius: "var(--radius)",
-                boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
+                boxShadow: "8px 8px 15px rgba(0, 0, 0, 0.1) inset",
                 fontFamily: "var(--font-body)",
               }}
             />
@@ -73,6 +73,7 @@ const TokenomicsSection = () => {
                         </CardHeader>
                         <CardContent>
                            <TokenomicsChart />
+                           
                         </CardContent>
                     </Card>
                     <Card className="clay-card rounded-2xl bg-secondary">

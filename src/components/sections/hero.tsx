@@ -81,9 +81,9 @@ const HeroSection = () => {
                     </div>
                     <div className="relative flex justify-center items-center group mt-10 md:mt-0">
                         <div className="absolute w-full h-full bg-primary/20 rounded-full filter blur-3xl group-hover:scale-110 transition-transform duration-500"></div>
-                         <Image
-                            src="/hero-image.png"
-                            width={600}
+                         <Image 
+                            src="/src/images/hero.png"
+                            width={700}
                             height={600}
                             alt="Dough Games Character"
                             className="relative z-10 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-3"

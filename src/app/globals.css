@@ -74,13 +74,15 @@
 
 @layer utilities {
   .clay-card, .clay-button {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), inset -7px -5px 12px rgba(255, 255, 255, 0.5), inset 9px 9px 12px rgba(0, 0, 0, 0.02);
+   
+    box-shadow: 8px 8px 10px rgba(46, 36, 27, 0.28), inset -15px -15px 20px rgba(50, 50, 50, 0.23), inset 12px 12px 18px rgba(255, 255, 255, 0.701);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
   .clay-card:hover, .clay-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.12), inset -5px -4px 12px rgba(255, 255, 255, 0.45), inset 7px 7px 10px rgba(0, 0, 0, 0.01);
+    transform: translateY(-5px);
+    box-shadow: 7px 4px 12px #4747473b inset,
+                -7px -4px 12px #4747473b inset;
   }
 
   .clay-button:active {
