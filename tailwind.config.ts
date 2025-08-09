@@ -113,7 +113,7 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'gradient-loop': 'gradient-loop 5s linear infinite',
+        'gradient-loop': 'gradient-loop 20s ease infinite',
         'marquee': 'marquee 25s linear infinite',
         'float': 'float 6s ease-in-out infinite',
       },

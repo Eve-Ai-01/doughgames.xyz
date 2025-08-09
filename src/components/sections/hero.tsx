@@ -63,7 +63,6 @@ const AnimatedShape = ({ className, animationDelay }: { className: string; anima
 const HeroSection = () => {
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 pb-10 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-hero opacity-50 z-0"></div>
             <AnimatedShape className="bg-orange-300 w-72 h-72 top-1/4 left-1/4" animationDelay="0s" />
             <AnimatedShape className="bg-sky-300 w-52 h-52 bottom-1/4 right-1/4" animationDelay="2s" />
             <AnimatedShape className="bg-red-300 w-64 h-64 top-1/2 right-1/3" animationDelay="4s" />
