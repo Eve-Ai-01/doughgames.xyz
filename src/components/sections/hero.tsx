@@ -63,9 +63,9 @@ const AnimatedShape = ({ className, animationDelay }: { className: string; anima
 const HeroSection = () => {
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 pb-10 overflow-hidden">
-            <AnimatedShape className="bg-orange-300 w-72 h-72 top-1/4 left-1/4" animationDelay="0s" />
-            <AnimatedShape className="bg-sky-300 w-52 h-52 bottom-1/4 right-1/4" animationDelay="2s" />
-            <AnimatedShape className="bg-red-300 w-64 h-64 top-1/2 right-1/3" animationDelay="4s" />
+            <AnimatedShape className="bg-primary/50 w-72 h-72 top-1/4 left-1/4" animationDelay="0s" />
+            <AnimatedShape className="bg-accent/50 w-52 h-52 bottom-1/4 right-1/4" animationDelay="2s" />
+            <AnimatedShape className="bg-primary/30 w-64 h-64 top-1/2 right-1/3" animationDelay="4s" />
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -82,12 +82,12 @@ const HeroSection = () => {
                     <div className="relative flex justify-center items-center group mt-10 md:mt-0">
                         <div className="absolute w-full h-full bg-primary/20 rounded-full filter blur-3xl group-hover:scale-110 transition-transform duration-500"></div>
                          <Image
-                            src="https://placehold.co/600x600.png"
+                            src="/hero-image.png"
                             width={600}
                             height={600}
-                            alt="Doughman Character"
+                            alt="Dough Games Character"
                             className="relative z-10 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-3"
-                            data-ai-hint="playful clay monster"
+                            data-ai-hint="gamer character"
                             priority
                         />
                     </div>

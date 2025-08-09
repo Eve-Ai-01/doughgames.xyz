@@ -3,13 +3,13 @@ const MarqueeSection = () => {
     const items = Array(10).fill(marqueeText);
 
     return (
-        <section className="bg-primary py-4 select-none border-y-4 border-orange-300/50">
+        <section className="bg-background/30 backdrop-blur-sm py-4 select-none border-y-2 border-primary/50">
             <div className="relative flex overflow-x-hidden">
                 <div className="flex animate-marquee whitespace-nowrap">
                     {items.map((text, index) => (
                         <span key={`p1-${index}`} className="text-4xl font-bold font-headline text-primary-foreground mx-8 drop-shadow-sm flex items-center gap-4">
                             {text}
-                            <span className="text-orange-300/50">*</span>
+                            <span className="text-primary/50">*</span>
                         </span>
                     ))}
                 </div>
@@ -18,7 +18,7 @@ const MarqueeSection = () => {
                      {items.map((text, index) => (
                         <span key={`p2-${index}`} className="text-4xl font-bold font-headline text-primary-foreground mx-8 drop-shadow-sm flex items-center gap-4">
                             {text}
-                            <span className="text-orange-300/50">*</span>
+                            <span className="text-primary/50">*</span>
                         </span>
                     ))}
                 </div>
