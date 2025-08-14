@@ -1,23 +1,45 @@
 "use client";
 
+
+
+
+
 import Image from 'next/image';
-import heroImage from '@/images/hero.png';
+
+
 
 const HeroSection = () => {
-    return (
-        <section id="home" className="relative w-full min-h-screen flex items-center justify-center">
-            <div className="absolute inset-0 w-full h-full">
-                <div className="absolute w-full h-full bg-primary/20 filter blur-3xl"></div>
-                <Image
-                    src={heroImage}
-                    alt="Dough Games Character"
-                    fill={true}
-                    priority
-                    className="object-cover"
-                />
-            </div>
-        </section>
-    );
+
+    return (
+
+           
+
+                    <div className="relative cover justify-center items-center group mt-10 md:mt-0">
+
+                        <div className="absolute w-full h-full bg-primary/20 rounded-full filter blur-3xl group-hover:scale-110 transition-transform duration-500"></div>
+
+                         <Image
+
+                            src="/images/hero.png"
+
+                            alt="Dough Games Character"
+
+                            width={100%}
+
+                            height={100%}
+
+                            
+
+                        />
+
+                    </div>
+
+           
+
+    );
+
 };
+
+
 
 export default HeroSection;
