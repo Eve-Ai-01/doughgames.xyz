@@ -13,7 +13,7 @@ const HeroSection = () => {
                             alt="Dough Games Character"
                             width={1000}
                             height={1000}
-                            className="relative z-10 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-3"
+                            
                         />
                     </div>
            
