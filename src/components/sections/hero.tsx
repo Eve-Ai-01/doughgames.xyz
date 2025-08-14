@@ -1,6 +1,9 @@
 "use client";
 
 import Image from 'next/image';
+// Import the hero image directly from its location in the `src` directory.
+// This allows Next.js to correctly process and optimize the image.
+import heroImage from '@/images/hero.png';
 
 /**
  * HeroSection Component
@@ -28,10 +31,11 @@ const HeroSection = () => {
                         <div className="absolute w-full h-full bg-primary/20 rounded-full filter blur-3xl group-hover:scale-110 transition-transform duration-500"></div>
 
                         {/* The main hero image. It uses the Next.js <Image> component for optimization.
+                          The `src` prop is now correctly pointing to the imported image object.
                           On hover (`group-hover`), it scales up slightly and rotates.
                         */}
                         <Image
-                            src="/images/hero.png"
+                            src={heroImage}
                             alt="Dough Games Character"
                             width={1000}
                             height={1000}
