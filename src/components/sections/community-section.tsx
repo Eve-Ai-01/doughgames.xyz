@@ -1,3 +1,5 @@
+// src/components/sections/community-section.tsx
+
 "use client";
 
 import React from 'react';
@@ -36,9 +38,9 @@ const CommunitySection = () => {
                          <h3 className="text-3xl font-bold font-headline text-center md:text-left">Get Involved</h3>
                          <p className="text-muted-foreground text-center md:text-left">Follow our socials, join the discussion, and subscribe for the latest alpha drops and project updates.</p>
                          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                            <Button className="clay-button bg-[#1DA1F2] hover:bg-[#1a8cd8] text-white rounded-full px-6 py-3 text-base font-bold"><Twitter className="mr-2"/> Twitter</Button>
-                            <Button className="clay-button bg-[#7289DA] hover:bg-[#677bc4] text-white rounded-full px-6 py-3 text-base font-bold"><Disc className="mr-2"/> Discord</Button>
-                            <Button className="clay-button bg-[#2AABEE] hover:bg-[#2297d2] text-white rounded-full px-6 py-3 text-base font-bold"><Send className="mr-2"/> Telegram</Button>
+                            <Button className="clay-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 text-base font-bold"><Twitter className="mr-2"/> Twitter</Button>
+                            <Button className="clay-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 text-base font-bold"><Disc className="mr-2"/> Discord</Button>
+                            <Button className="clay-button bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 text-base font-bold"><Send className="mr-2"/> Telegram</Button>
                          </div>
                          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 pt-4">
                             <Input type="email" name="email" placeholder="your.email@dough.com" className="clay-card !bg-card rounded-full h-12 flex-grow" required aria-label="Email for subscription" />
