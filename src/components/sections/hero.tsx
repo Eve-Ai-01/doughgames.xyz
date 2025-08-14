@@ -11,8 +11,8 @@ const HeroSection = () => {
                          <Image
                             src="/images/hero.png"
                             alt="Dough Games Character"
-                            width={1000}
-                            height={1000}
+                            width={100%}
+                            height={100%}
                             
                         />
                     </div>
