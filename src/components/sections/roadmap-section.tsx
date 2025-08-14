@@ -1,3 +1,5 @@
+// src/components/sections/roadmap-section.tsx
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Rocket, Gem, Terminal, Swords, Shirt } from 'lucide-react';
 
@@ -23,7 +25,7 @@ const roadmapPhases = [
         title: "DoughGames Terminal",
         status: "After Funding",
         description: "A one-stop hub for traders with advanced tools, charts, and analytics.",
-        icon: <Terminal className="h-8 w-8 text-green-500" />,
+        icon: <Terminal className="h-8 w-8 text-primary" />, // Changed from text-green-500
         items: ["Terminal Beta", "Tool Integration", "Public Release"],
     },
     {
@@ -31,7 +33,7 @@ const roadmapPhases = [
         title: "Ecosystem Expansion",
         status: "Future Plans",
         description: "Expanding the Doughverse with fight scenes, merchandise, and a mobile app.",
-        icon: <div className="flex gap-2"><Swords className="h-8 w-8 text-red-500" /><Shirt className="h-8 w-8 text-purple-500" /></div>,
+        icon: <div className="flex gap-2"><Swords className="h-8 w-8 text-red-500" /><Shirt className="h-8 w-8 text-primary" /></div>, // Changed from text-purple-500
         items: ["Fight Scenes", "Merch Store", "Mobile App"],
     },
 ];
