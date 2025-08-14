@@ -1,4 +1,6 @@
-/* src/app/globals.css */
+Of course\! Here is the original content of the `globals.css` file before any changes were made.
+
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,19 +13,19 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 240 10% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 33 100% 65%; /* #FFB347 - Changed from purple to orange */
-    --primary-foreground: 240 10% 3.9%; /* Changed for better contrast on orange */
+    --primary: 262.1 83.3% 57.8%; /* #6d28d9 */
+    --primary-foreground: 210 20% 98%;
     --secondary: 240 4.8% 95.9%; /* #f4f4f5 */
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 346.8 77.2% 49.8%; /* #ef4444 - Kept as red */
+    --accent: 346.8 77.2% 49.8%; /* #ef4444 */
     --accent-foreground: 210 20% 98%;
-    --destructive: 0 84.2% 60.2%; /* Kept as red */
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 33 100% 65%; /* Changed to new orange primary color */
+    --ring: 262.1 83.3% 57.8%;
     --radius: 0.8rem;
   }
 
@@ -34,19 +36,19 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 240 10% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 33 100% 65%; /* #FFB347 - Changed from purple to orange */
-    --primary-foreground: 240 10% 3.9%; /* Changed for better contrast on orange */
+    --primary: 262.1 83.3% 57.8%; /* #6d28d9 */
+    --primary-foreground: 210 20% 98%;
     --secondary: 240 4.8% 95.9%; /* #f4f4f5 */
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 346.8 77.2% 49.8%; /* #ef4444 - Kept as red */
+    --accent: 346.8 77.2% 49.8%; /* #ef4444 */
     --accent-foreground: 210 20% 98%;
-    --destructive: 0 84.2% 60.2%; /* Kept as red */
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 33 100% 65%; /* Changed to new orange primary color */
+    --ring: 262.1 83.3% 57.8%;
   }
 }
 
@@ -65,8 +67,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* Changed gradient to shades of orange for ambient effect */
-    background: linear-gradient(270deg, hsl(var(--primary)/.3), hsl(39 100% 50% / 0.3));
+    background: linear-gradient(270deg, hsl(var(--primary)/.3), hsl(var(--accent)/.3));
     background-size: 200% 200%;
     animation: gradientMove 3s ease-in-out infinite;
     opacity: 0.3;
@@ -75,18 +76,11 @@
 }
 
 @layer utilities {
-  .clay-card {
+  .clay-card, .clay-button {
    
-    box-shadow: 8px 8px 10px rgba(46, 36, 27, 0.1), inset -15px -15px 35px rgba(50, 50, 50, 0.1), inset 15px 15px 35px rgba(255, 255, 255, 0.301);
+    box-shadow: 8px 8px 10px rgba(46, 36, 27, 0.28), inset -15px -15px 20px rgba(50, 50, 50, 0.23), inset 12px 12px 18px rgba(255, 255, 255, 0.701);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
-
-   .clay-button {
-   
-    box-shadow: 8px 8px 10px rgba(46, 36, 27, 0.1), inset -15px -15px 35px rgba(50, 50, 50, 0.1), inset 15px 15px 35px rgba(255, 255, 255, 0.301);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  } 
-  
 
   .clay-card:hover, .clay-button:hover {
     transform: translateY(-5px);
@@ -121,3 +115,4 @@
         background-position: 0% 50%;
     }
 }
+```
